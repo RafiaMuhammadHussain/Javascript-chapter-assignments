@@ -51,9 +51,17 @@ let upperCaseInput = userInput.toUpperCase();
 document.write(`User input: ${userInput} <br> Upper case: ${upperCaseInput} <br><br>`);
 
 //Problem 11
-let userInput2 = prompt("Enter a word");
-let titleCaseInput = userInput2.charAt(0).toUpperCase() + userInput2.slice(1).toLowerCase();
-document.write(`User input: ${userInput2} <br> Title case: ${titleCaseInput} <br><br>`);
+let userInput2 = prompt("Give me input to convert into title case");
+let words = userInput.toLowerCase().split(" ");
+for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    if (words.length > 0) {
+        words[i] = word[0].toUpperCase() + word.slice(1);
+    }
+}
+let titleCase = words.join(' ');
+document.writeln(`User Input: ${userInput2} <br>`);
+document.writeln(`Title Case: ${titleCase} <br><br>`);
 
 //Problem 12
 let num = 35.36;
