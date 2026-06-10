@@ -73,7 +73,7 @@ function calculateHypotenuse(base, perpendicular) {
         return num4 * num4;
     }
     let hypotenuse = Math.sqrt(
-        calculateSquare(base) + calculateSquare(perpendicular)
+        calculateSquare(base) + calculateSquare(perpendicular)==
     );
     return hypotenuse;
 }
